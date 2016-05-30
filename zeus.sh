@@ -20,7 +20,7 @@ gitconfig () {
 
 gitcreate () {
     # Create a private or public repo on Github
-    read -p "How should the Github remote repo be called? >>> " remoterepo
+    read -p "What should the Github remote repo be called? >>> " remoterepo
     # Get the stored GitHub username inside github_config
     githubname=$(cat ~/.configs/github_config | egrep "githubusername" | tail -1 | awk '{print $2}')
     # Loop to create the remote repo
